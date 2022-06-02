@@ -2,7 +2,19 @@
 * utwórz dwie klasy (Book, Customer), dodaj odpowiednie właściwości (tytuł, nazwisko, itp);
 * zapewnij, że klasa Customer ma wiedzę o tym, jakie książki posiada;
 * utwórz klasę (bean) będącą formą bazy danych (pozwala na przechowywanie książek w pamięci)
-* utwórz klasę (bean) pozwalającą na zarządzanie książkami (dodanie nowej, szukanie po nazwie), podczas dodawania książki przekaż jej parametry (tytuł, autor) a nie pełny obiekt
-* utwórz klasę (bean) będącą formą bazy danych (pozwala na przechowywanie klientów w pamięci, wyszukiwanie oraz wypożyczanie i oddawanie książek - a może wystarczy tylko metoda aktualizująca stan klienta?)
-* utwórz klasą (bean) pozwalającą na zarządzanie klientami (utworzenie nowego, pobranie istniejącego, wypożyczenie/oddanie książki), podczas dodawania klientów przekazuj tylko parametry klienta (imię, kartę biblioteczną), a nie cały obiekt
-* utwórz klasę (bean) pozwalającą na wypożyczanie (parametry wejściowe - nazwa ksiązki, karta biblioteczna klienta, efekt - ksiąka powinna zosta przypisna do użytkownika)
+
+* utwórz klasę (bean) pozwalającą na zarządzanie książkami (dodanie nowej, szukanie po nazwie),
+    podczas dodawania książki przekaż jej parametry (tytuł, autor) a nie pełny obiekt
+
+* utwórz klasę (bean) będącą formą bazy danych (pozwala na przechowywanie klientów w pamięci,
+    wyszukiwanie oraz wypożyczanie i oddawanie książek -
+    a może wystarczy tylko metoda aktualizująca stan klienta?)
+
+* utwórz klasą (bean) pozwalającą na zarządzanie klientami
+    (utworzenie nowego, pobranie istniejącego, wypożyczenie/oddanie książki),
+    podczas dodawania klientów przekazuj tylko parametry klienta (imię, kartę biblioteczną),
+    a nie cały obiekt
+
+* utwórz klasę (bean) pozwalającą na wypożyczanie
+    (parametry wejściowe - nazwa ksiązki, karta biblioteczna klienta,
+    efekt - ksiąka powinna zosta przypisna do użytkownika)
