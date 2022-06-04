@@ -1,6 +1,9 @@
 * utwórz nowy projekt Springowy (wykona wszystkie kroki z ćwiczenia 1)
+
 * utwórz dwie klasy (Book, Customer), dodaj odpowiednie właściwości (tytuł, nazwisko, itp);
+
 * zapewnij, że klasa Customer ma wiedzę o tym, jakie książki posiada;
+
 * utwórz klasę (bean) będącą formą bazy danych (pozwala na przechowywanie książek w pamięci)
 
 * utwórz klasę (bean) pozwalającą na zarządzanie książkami (dodanie nowej, szukanie po nazwie),

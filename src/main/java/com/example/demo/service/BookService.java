@@ -18,7 +18,8 @@ public class BookService {
     }
 
     public void addBook(String title, String author) {
-        bookRepository.addBook(title, author);
+        Book book = new Book(title, author);
+        bookRepository.addBook(book);
     }
 
     public Book getBook(String title) {

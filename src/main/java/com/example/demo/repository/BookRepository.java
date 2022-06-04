@@ -2,27 +2,26 @@ package com.example.demo.repository;
 
 import com.example.demo.model.Book;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.stream.Collectors;
 
-@Component
+@Repository
 public class BookRepository {
 
-    private final List<Book> bookList = new ArrayList<>();
+    private final Map<String, Book> books = new ConcurrentHashMap<>();
 
     public Optional<Book> getBook(String title) {
-        return bookList.stream()
-                .filter(book -> book.getTitle().equals(title))
-                .findFirst();
+        return Optional.ofNullable(books.get(title));
     }
 
-    public void addBook(String title, String author) {
-        bookList.add(new Book(title, author));
+    public void addBook(Book book) {
+        books.put(book.getTitle(), book);
     }
 
     public List<Book> getBookList() {
-        return bookList;
+        return List.copyOf(books.values());
     }
 }

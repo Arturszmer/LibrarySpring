@@ -1,12 +1,14 @@
 package com.example.demo.model;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Customer {
 
     private final String name;
     private final int customerId;
+
     private final List<Book> borrowedBooks = new ArrayList<>();
 
     public Customer(String name, int customerId) {
@@ -23,7 +25,7 @@ public class Customer {
     }
 
     public List<Book> getBorrowedBooks() {
-        return borrowedBooks;
+        return Collections.unmodifiableList(borrowedBooks);
     }
 
     public void addBookToBorrowedBooks(Book book) {
